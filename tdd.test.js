@@ -1,6 +1,7 @@
 import capitalize from  "./capitalize"
 import revereString from "./reverseString"
 import calculator from "./calculator"
+import caesarCipher from "./caesarCipher"
 
 describe('Capitalize', () => {
     it('Return first letter in capital', ()=>{
@@ -30,4 +31,12 @@ describe('Calculator', () => {
     it("Divide", ()=>{
         expect(calculator.divide(10,5)).toBe(2)
     })
+})
+
+describe("Caesar Cipher Cryptograpghy", ()=>{
+
+    it("Encryption One: ", ()=>{
+        expect(caesarCipher("bjorn", 5)).toBe('gotws')
+    })
+
 })
